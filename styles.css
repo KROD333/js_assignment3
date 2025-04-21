@@ -151,3 +151,26 @@ h1 {
     border-radius: 5px;
 }
 
+.api-docs {
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.api-docs p {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.api-docs a {
+    color: #0083b0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.api-docs a:hover {
+    color: #006b8f;
+    text-decoration: underline;
+}
+
