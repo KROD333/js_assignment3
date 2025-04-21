@@ -5,22 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <h1>Weather App</h1>
         <div class="search-container">
             <input type="text" id="cityInput" placeholder="Enter city name">
-            <button id="searchBtn">Search</button>
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
         </div>
         <div class="weather-container">
             <div id="weatherInfo" class="hidden">
-                <h2 id="cityName"></h2>
+                <div class="main-info">
+                    <h2 id="cityName"></h2>
+                    <div class="temperature-container">
+                        <div id="temperature"></div>
+                        <div id="weatherIcon"></div>
+                    </div>
+                    <div id="description" class="description"></div>
+                </div>
                 <div class="weather-details">
-                    <div id="temperature"></div>
-                    <div id="description"></div>
-                    <div id="humidity"></div>
-                    <div id="wind"></div>
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <div>
+                            <span>Humidity</span>
+                            <div id="humidity"></div>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <div>
+                            <span>Wind</span>
+                            <div id="wind"></div>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-temperature-high"></i>
+                        <div>
+                            <span>Feels Like</span>
+                            <div id="feelsLike"></div>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <div>
+                            <span>Pressure</span>
+                            <div id="pressure"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sun-info">
+                    <div class="sun-item">
+                        <i class="fas fa-sun"></i>
+                        <div>
+                            <span>Sunrise</span>
+                            <div id="sunrise"></div>
+                        </div>
+                    </div>
+                    <div class="sun-item">
+                        <i class="fas fa-moon"></i>
+                        <div>
+                            <span>Sunset</span>
+                            <div id="sunset"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="errorMessage" class="hidden"></div>
